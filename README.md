@@ -1,8 +1,8 @@
-# Sentinel Secure - Premium Security Solutions
+# Sentinel Solutions - Premium Security Solutions
 
 ## Project Overview
 
-Sentinel Secure provides professional physical and digital security services. Our comprehensive solutions include surveillance, cybersecurity, and executive protection services to keep your assets safe.
+Sentinel Solutions provides professional physical and digital security services. Our comprehensive solutions include surveillance, cybersecurity, and executive protection services to keep your assets safe.
 
 ## Getting Started
 
@@ -47,14 +47,6 @@ npm run build
 - shadcn-ui
 - Tailwind CSS
 
-## Deployment
-
-This project can be deployed to any static hosting service. Some popular options include:
-
-- Vercel
-- Netlify
-- GitHub Pages
-- Cloudflare Pages
 
 ## License
 
