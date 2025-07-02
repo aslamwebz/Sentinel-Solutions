@@ -1,10 +1,16 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Shield } from 'lucide-react';
+import { Menu, X, Shield, ArrowRight } from 'lucide-react';
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/modal';
+import { SecurityAssessmentForm } from './SecurityAssessmentForm';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isAssessmentOpen, setIsAssessmentOpen] = useState(false);
+
+  const openAssessmentModal = () => setIsAssessmentOpen(true);
+  const closeAssessmentModal = () => setIsAssessmentOpen(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,9 +56,29 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <button className="btn-primary text-sm xl:text-base px-4 py-2 xl:px-6 xl:py-3">
-              Free Assessment
-            </button>
+            <Dialog open={isAssessmentOpen} onOpenChange={setIsAssessmentOpen}>
+              <DialogTrigger asChild>
+                <button 
+                  onClick={openAssessmentModal}
+                  className="relative overflow-hidden group bg-gradient-to-r from-electric-blue to-cyan-accent hover:from-cyan-accent hover:to-electric-blue text-navy-dark font-semibold px-4 py-2 xl:px-6 xl:py-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-glow shadow-electric-blue/30 text-sm xl:text-base flex items-center"
+                >
+                  <span className="relative z-10 flex items-center">
+                    <span>Free Assessment</span>
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-electric-blue/0 via-white/20 to-electric-blue/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                </button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[600px] max-h-[90vh] overflow-y-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold text-white mb-2">Free Security Assessment</DialogTitle>
+                  <p className="text-gray-300 text-sm mb-6">
+                    Fill out the form below and our security experts will contact you to schedule a free, no-obligation security assessment.
+                  </p>
+                </DialogHeader>
+                <SecurityAssessmentForm onSuccess={closeAssessmentModal} onCancel={closeAssessmentModal} />
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,12 +110,23 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="px-2 pt-2">
-                <button 
-                  className="btn-primary w-full text-sm"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Free Assessment
-                </button>
+                <Dialog open={isAssessmentOpen} onOpenChange={setIsAssessmentOpen}>
+                  <DialogTrigger asChild>
+                    <button 
+                      className="relative overflow-hidden group bg-gradient-to-r from-electric-blue to-cyan-accent hover:from-cyan-accent hover:to-electric-blue text-navy-dark font-semibold w-full text-sm px-4 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-glow shadow-electric-blue/30 flex items-center justify-center"
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        openAssessmentModal();
+                      }}
+                    >
+                      <span className="relative z-10 flex items-center">
+                        <span>Free Assessment</span>
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                      <span className="absolute inset-0 bg-gradient-to-r from-electric-blue/0 via-white/20 to-electric-blue/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                    </button>
+                  </DialogTrigger>
+                </Dialog>
               </div>
             </div>
           </div>
