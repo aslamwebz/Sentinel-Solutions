@@ -41,7 +41,7 @@ const Navigation = () => {
             </div>
             <div>
               <h1 className="text-xl md:text-2xl font-bold text-white">Sentinel</h1>
-              <p className="text-xs md:text-sm text-steel-grey -mt-1">SECURE</p>
+              <p className="text-xs md:text-sm text-steel-grey -mt-1">SOLUTIONS</p>
             </div>
           </div>
 

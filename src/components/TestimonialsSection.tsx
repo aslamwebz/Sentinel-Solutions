@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
       name: 'Michael Richardson',
       title: 'CEO, Richardson Industries',
       company: 'Fortune 500 Manufacturing',
-      content: 'Sentinel Secure transformed our security posture completely. Their proactive approach and cutting-edge technology prevented three potential breaches in our first year alone. Absolutely worth every investment.',
+      content: 'Sentinel Solutions transformed our security posture completely. Their proactive approach and cutting-edge technology prevented three potential breaches in our first year alone. Absolutely worth every investment.',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80'
     },
@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
       name: 'Robert Hamilton',
       title: 'Private Client',
       company: 'High-Net-Worth Individual',
-      content: 'When you value your family\'s safety above all else, you need the best. Sentinel Secure provides peace of mind that money can\'t buy. Their discretion and professionalism are unmatched.',
+      content: 'When you value your family\'s safety above all else, you need the best. Sentinel Solutions provides peace of mind that money can\'t buy. Their discretion and professionalism are unmatched.',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80'
     }

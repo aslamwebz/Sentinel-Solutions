@@ -47,7 +47,7 @@ const WhyChooseUsSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-            WHY CHOOSE <span className="text-electric-blue">SENTINEL SECURE</span>
+            WHY CHOOSE <span className="text-electric-blue">SENTINEL SOLUTIONS</span>
           </h2>
           <p className="text-xl text-steel-grey leading-relaxed">
             When failure is not an option, industry leaders choose us for our uncompromising standards and proven results.

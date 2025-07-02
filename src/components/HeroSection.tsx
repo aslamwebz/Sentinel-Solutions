@@ -131,7 +131,7 @@ const HeroSection = () => {
               isOpen={isVideoOpen}
               onClose={closeVideoModal}
               videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-              title="Our Story - Sentinel Secure"
+              title="Our Story - Sentinel Solutions"
             />
           </div>
 

@@ -80,8 +80,8 @@ const CTASection = () => {
               <Mail className="h-8 w-8 text-electric-blue mx-auto mb-4" />
               <h3 className="text-xl font-bold text-white mb-2">Secure Email</h3>
               <p className="text-steel-grey mb-4">Encrypted communications</p>
-              <a href="mailto:contact@sentinelsecure.com" className="text-electric-blue font-semibold hover:text-white transition-colors">
-                contact@sentinelsecure.com
+              <a href="mailto:contact@sentinelsolutions.com" className="text-electric-blue font-semibold hover:text-white transition-colors">
+                contact@sentinelsolutions.com
               </a>
             </div>
 
@@ -99,7 +99,7 @@ const CTASection = () => {
           <div className="mt-16 bg-navy-primary/30 backdrop-blur-sm border border-electric-blue/20 rounded-2xl p-8">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <Shield className="h-8 w-8 text-electric-blue" />
-              <h3 className="text-2xl font-bold text-white">Sentinel Secure Guarantee</h3>
+              <h3 className="text-2xl font-bold text-white">Sentinel Solutions Guarantee</h3>
             </div>
             <p className="text-steel-grey leading-relaxed">
               We're so confident in our security solutions that we offer a 30-day satisfaction guarantee. 
