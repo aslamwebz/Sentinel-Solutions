@@ -15,7 +15,7 @@ Sentinel Solutions provides professional physical and digital security services.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/sentinel-secure-web.git
+   git clone https://github.com/aslamwebz/Sentinel-Solutions.git
    cd sentinel-secure-web
    ```
 
